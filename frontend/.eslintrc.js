@@ -32,15 +32,9 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: [
-          ...airbnbRules['import/no-extraneous-dependencies'][1].devDependencies,
-          'config/**/*',
-          'src/utils/test/**/*',
-          'src/setupTests.ts',
-          'cypress/**/*',
-          'cypress.config.ts',
-          'dangerfile.ts'
-        ]
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: false
       }
     ],
     'simple-import-sort/exports': 'error',
